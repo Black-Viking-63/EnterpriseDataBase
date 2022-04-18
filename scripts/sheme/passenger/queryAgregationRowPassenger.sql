@@ -1,0 +1,2 @@
+declare @weight int = (select AVG(air_base.dbo.passenger.weight_baggage) from air_base.dbo.passenger)
+select COUNT(air_base.dbo.passenger.weight_baggage), @weight from air_base.dbo.passenger where air_base.dbo.passenger.weight_baggage < @weight
