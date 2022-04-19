@@ -57,7 +57,7 @@
 <table>
     <thead>
         <tr>
-            <th colspan =4>Active Aircraft</th>            
+            <th colspan =4>Infromation Aircraft</th>            
         </tr>
     </thead>
     <tbody>
@@ -107,8 +107,100 @@
 </table>  
 
 
-# Связи сущностей
+## Аэропорт
+<table>
+    <thead>
+        <tr>
+            <th colspan =4>Airport</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScreenShot</td>
+            <td>Название поля</td>
+            <td>Тип даных</td>
+            <td>Описание</td>
+        </tr>
+        <tr>
+            <td rowspan=5>ScreenShot</td>
+            <td>id_airport</td>
+            <td>Type</td>
+            <td>Row 0/2</td>
+        </tr>
+        <tr>
+            <td>dislocation</td>
+            <td>Type</td>
+            <td>Row 1/2</td>
+        </tr>
+        <tr>
+            <td>name_airport</td>
+            <td>Type</td>
+            <td>Row 2/2</td>
+        </tr>
+        <tr>
+            <td>class_airport</td>
+            <td>Type</td>
+            <td>Row 3/2</td>
+        </tr>      
+        <tr>
+            <td>count_runway</td>
+            <td>Type</td>
+            <td>Row 4/2</td>
+        </tr> 
+    </tbody>
+</table>  
 
+## Взлетная полоса
+
+<table>
+    <thead>
+        <tr>
+            <th colspan =4>Runway</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScreenShot</td>
+            <td>Название поля</td>
+            <td>Тип даных</td>
+            <td>Описание</td>
+        </tr>
+        <tr>
+            <td rowspan=6>ScreenShot</td>
+            <td>id_runway</td>
+            <td>Type</td>
+            <td>Row 0/2</td>
+        </tr>
+        <tr>
+            <td>lenght_runway</td>
+            <td>Type</td>
+            <td>Row 1/2</td>
+        </tr>
+        <tr>
+            <td>width_runway</td>
+            <td>Type</td>
+            <td>Row 2/2</td>
+        </tr>
+        <tr>
+            <td>active_label</td>
+            <td>Type</td>
+            <td>Row 3/2</td>
+        </tr>      
+        <tr>
+            <td>class_runway</td>
+            <td>Type</td>
+            <td>Row 4/2</td>
+        </tr> 
+        <tr>
+            <td>id_airport</td>
+            <td>Type</td>
+            <td>Row 5/2</td>
+        </tr> 
+    </tbody>
+</table>  
+
+
+# Связи сущностей
 
 | Тип связи | Скриншот | Описание |
 |:---:|:---:|:---:|
