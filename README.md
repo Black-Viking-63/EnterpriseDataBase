@@ -199,6 +199,98 @@
     </tbody>
 </table>  
 
+## Авиакомпания
+
+<table>
+    <thead>
+        <tr>
+            <th colspan =4>Aircompany</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScreenShot</td>
+            <td>Название поля</td>
+            <td>Тип даных</td>
+            <td>Описание</td>
+        </tr>
+        <tr>
+            <td rowspan=5>ScreenShot</td>
+            <td>id_aircompany</td>
+            <td>Type</td>
+            <td>Row 0/2</td>
+        </tr>
+        <tr>
+            <td>name_aircompany</td>
+            <td>Type</td>
+            <td>Row 1/2</td>
+        </tr>
+        <tr>
+            <td>count_aircrfat</td>
+            <td>Type</td>
+            <td>Row 2/2</td>
+        </tr>
+        <tr>
+            <td>mean_count_passenger</td>
+            <td>Type</td>
+            <td>Row 3/2</td>
+        </tr>      
+        <tr>
+            <td>city_dislocation</td>
+            <td>Type</td>
+            <td>Row 4/2</td>
+        </tr> 
+    </tbody>
+</table>  
+
+## Passenger
+
+<table>
+    <thead>
+        <tr>
+            <th colspan =4>Passenger</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScreenShot</td>
+            <td>Название поля</td>
+            <td>Тип даных</td>
+            <td>Описание</td>
+        </tr>
+        <tr>
+            <td rowspan=6>ScreenShot</td>
+            <td>id_passenger</td>
+            <td>Type</td>
+            <td>Row 0/2</td>
+        </tr>
+        <tr>
+            <td>second_name_passenger</td>
+            <td>Type</td>
+            <td>Row 1/2</td>
+        </tr>
+        <tr>
+            <td>name_passenger</td>
+            <td>Type</td>
+            <td>Row 2/2</td>
+        </tr>
+        <tr>
+            <td>number_passport</td>
+            <td>Type</td>
+            <td>Row 3/2</td>
+        </tr>      
+        <tr>
+            <td>weight_baggage</td>
+            <td>Type</td>
+            <td>Row 4/2</td>
+        </tr> 
+                <tr>
+            <td>id_tickets</td>
+            <td>Type</td>
+            <td>Row 5/2</td>
+        </tr> 
+    </tbody>
+</table>  
 
 # Связи сущностей
 
