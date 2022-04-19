@@ -17,7 +17,7 @@
 <table>
     <thead>
         <tr>
-            <th colspan =4>Active Aircraft</th>
+            <th colspan =5>Active Aircraft</th>
         </tr>
     </thead>
     <tbody>
@@ -26,27 +26,32 @@
             <td align="center" valign="center">Название поля</td>
             <td align="center" valign="center">Тип данных</td>
             <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
-            <td rowspan=5> <img src="images/activeAircraft.PNG"/> </td>
+            <td rowspan=4> <img src="images/activeAircraft.PNG"/> </td>
             <td align="center" valign="center">id_activeAircraft</td>
             <td align="center" valign="center">int</td>
             <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">Primary Key</td>
         </tr>
         <tr>
             <td align="center" valign="center">active_label</td>
             <td align="center" valign="center">bool</td>
             <td align="center" valign="center">Является маркером действительности самолета.</br> Если выбрано значение true, то самолет действителен</br>может летать, вследствии чего должен иметь</br>место вылета и место прилета. Если выбрано значение</br>false самолет считается не действительным и летать</br>не может, а в места вылета и прилета имеют значения NULL.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
             <td align="center" valign="center">departure_airport</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о месте вылета (город) самолета, в случае если он действителен.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
             <td align="center" valign="center">arrival_airport</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о месте прилета (город) самолета, в случае если он действителен.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>       
     </tbody>
 </table>
@@ -55,7 +60,7 @@
 <table>
     <thead>
         <tr>
-            <th colspan =4>Infromation Aircraft</th>            
+            <th colspan =5>Infromation Aircraft</th>            
         </tr>
     </thead>
     <tbody>
@@ -64,42 +69,50 @@
             <td align="center" valign="center">Название поля</td>
             <td align="center" valign="center">Тип даных</td>
             <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
             <td rowspan=7><img src="images/informationAircraft.PNG"/> </td>
             <td align="center" valign="center">id_informationAircraft</td>
             <td align="center" valign="center">int</td>
             <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">Primary Key</td>
         </tr>
         <tr>
             <td align="center" valign="center">company_aircraft</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, сожержащим информацию</br>о производителе самолета.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
             <td align="center" valign="center">model_aircraft</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о модели самолета.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
             <td align="center" valign="center">count_seats</td>
             <td align="center" valign="center">int</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о количестве меств в самолете.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>      
         <tr>
             <td align="center" valign="center">class_aircraft</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о классе самолета.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
         <tr>
             <td align="center" valign="center">start_operation</td>
             <td align="center" valign="center">Date</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о дате начала эксплуатации самолета.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
         <tr>
             <td align="center" valign="center">end_operation</td>
             <td align="center" valign="center">Type</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о дате окончания эксплуатации самолета.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
     </tbody>
 </table>  
@@ -108,220 +121,242 @@
 <table>
     <thead>
         <tr>
-            <th colspan =4>Airport</th>            
+            <th colspan =5>Airport</th>            
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ScreenShot</td>
-            <td>Название поля</td>
-            <td>Тип даных</td>
-            <td>Описание</td>
+            <td align="center" valign="center">ScreenShot</td>
+            <td align="center" valign="center">Название поля</td>
+            <td align="center" valign="center">Тип данных</td>
+            <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
             <td rowspan=5><img src="images/airport.PNG"/> </td>
             <td align="center" valign="center">id_airport</td>
             <td align="center" valign="center">int</td>
             <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">Primary Key</td>
         </tr>
         <tr>
             <td align="center" valign="center">dislocation</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о городе дислокации аэропорта.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
             <td align="center" valign="center">name_airport</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о имени аэропорта.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
             <td align="center" valign="center">class_airport</td>
             <td align="center" valign="center">VARCHAR()</br>String</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о типе/классе аэропорта.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>      
         <tr>
             <td align="center" valign="center">count_runway</td>
             <td align="center" valign="center">int</td>
             <td align="center" valign="center">Является полем, содержащим информацию</br>о количестве взлетных полос в аэропорту.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
     </tbody>
 </table>  
-
---------------------------------------------------------------------------------------------------------------------------------------
 
 ## Взлетная полоса
 
 <table>
     <thead>
         <tr>
-            <th colspan =4>Runway</th>            
+            <th colspan =5>Runway</th>            
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ScreenShot</td>
-            <td>Название поля</td>
-            <td>Тип даных</td>
-            <td>Описание</td>
+            <td align="center" valign="center">ScreenShot</td>
+            <td align="center" valign="center">Название поля</td>
+            <td align="center" valign="center">Тип данных</td>
+            <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
             <td rowspan=6><img src="images/runway.PNG"/> </td>
-            <td>id_runway</td>
-            <td>int</td>
-            <td>Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">id_runway</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">Primary Key</td>
         </tr>
         <tr>
-            <td>lenght_runway</td>
-            <td>Type</td>
-            <td>Row 1/2</td>
+            <td align="center" valign="center">lenght_runway</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о длине взлетной полосы.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
-            <td>width_runway</td>
-            <td>Type</td>
-            <td>Row 2/2</td>
+            <td align="center" valign="center">width_runway</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о ширине взлетной полосы.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
-            <td>active_label</td>
-            <td>Type</td>
-            <td>Row 3/2</td>
+            <td align="center" valign="center">active_label</td>
+            <td align="center" valign="center">bool</td>
+            <td align="center" valign="center">Является маркером действительности взлетной полосы.</br> Если выбрано значение true, то полоса доступна для работы,</br> иначе не доступна.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>      
         <tr>
-            <td>class_runway</td>
-            <td>Type</td>
-            <td>Row 4/2</td>
+            <td align="center" valign="center">class_runway</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о классе взлетной полосы.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
         <tr>
-            <td>id_airport</td>
-            <td>Type</td>
-            <td>Row 5/2</td>
+            <td align="center" valign="center">id_airport</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>об аэропорте в котоом находится взлетная полоса.</td>
+            <td align="center" valign="center"> Foreign Key </td>
         </tr> 
     </tbody>
 </table>  
-
---------------------------------------------------------------------------------------------------------------------------------------
 
 ## Авиакомпания
 
 <table>
     <thead>
         <tr>
-            <th colspan =4>Aircompany</th>            
+            <th colspan =5>Aircompany</th>            
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ScreenShot</td>
-            <td>Название поля</td>
-            <td>Тип даных</td>
-            <td>Описание</td>
+            <td align="center" valign="center">ScreenShot</td>
+            <td align="center" valign="center">Название поля</td>
+            <td align="center" valign="center">Тип данных</td>
+            <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
             <td rowspan=5><img src="images/aircompany.PNG"/> </td>
-            <td>id_aircompany</td>
-            <td>int</td>
-            <td>Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">id_aircompany</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">Primary Key</td>
         </tr>
         <tr>
-            <td>name_aircompany</td>
-            <td>Type</td>
-            <td>Row 1/2</td>
+            <td align="center" valign="center">name_aircompany</td>
+            <td align="center" valign="center">VARCHAR()</br>String</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о имени авиакомпании.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
-            <td>count_aircrfat</td>
-            <td>Type</td>
-            <td>Row 2/2</td>
+            <td align="center" valign="center">count_aircrfat</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о количестве самолетов в компании</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
-            <td>mean_count_passenger</td>
-            <td>Type</td>
-            <td>Row 3/2</td>
+            <td align="center" valign="center">mean_count_passenger</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о среднем количестве пассаиров перевозимых компанией.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>      
         <tr>
-            <td>city_dislocation</td>
-            <td>Type</td>
-            <td>Row 4/2</td>
+            <td align="center" valign="center">city_dislocation</td>
+            <td align="center" valign="center">VARCHAR()</br>String</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о городе дислокации авиакомпании.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
     </tbody>
 </table>  
-
---------------------------------------------------------------------------------------------------------------------------------------
 
 ## Passenger
 
 <table>
     <thead>
         <tr>
-            <th colspan =4>Passenger</th>            
+            <th colspan =5>Passenger</th>            
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ScreenShot</td>
-            <td>Название поля</td>
-            <td>Тип даных</td>
-            <td>Описание</td>
+            <td align="center" valign="center">ScreenShot</td>
+            <td align="center" valign="center">Название поля</td>
+            <td align="center" valign="center">Тип данных</td>
+            <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
             <td rowspan=6><img src="images/passenger.PNG"/> </td>
-            <td>id_passenger</td>
-            <td>int</td>
-            <td>Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">id_passenger</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для однозначной</br>маркировки записей в таблице.</td>
+            <td align="center" valign="center">Primary Key</td>
+       </tr>
+        <tr>
+            <td align="center" valign="center">second_name_passenger</td>
+            <td align="center" valign="center">VARCHAR()</br>String</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о фамилии пассажира.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
-            <td>second_name_passenger</td>
-            <td>Type</td>
-            <td>Row 1/2</td>
+            <td align="center" valign="center">name_passenger</td>
+            <td align="center" valign="center">VARCHAR()</br>String</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о имени пассажира.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>
         <tr>
-            <td>name_passenger</td>
-            <td>Type</td>
-            <td>Row 2/2</td>
-        </tr>
-        <tr>
-            <td>number_passport</td>
-            <td>Type</td>
-            <td>Row 3/2</td>
+            <td align="center" valign="center">number_passport</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о номере паспорта пассажира.</td>
+            <td align="center" valign="center"> --- </td>
         </tr>      
         <tr>
-            <td>weight_baggage</td>
-            <td>Type</td>
-            <td>Row 4/2</td>
+            <td align="center" valign="center">weight_baggage</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о весе багажа пассажира.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
                 <tr>
-            <td>id_tickets</td>
-            <td>Type</td>
-            <td>Row 5/2</td>
+            <td align="center" valign="center">id_tickets</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является полем, содержащим информацию</br>о номере билета пассажира.</td>
+            <td align="center" valign="center"> --- </td>
         </tr> 
     </tbody>
 </table>  
-
---------------------------------------------------------------------------------------------------------------------------------------
 
 ## ClientAircompany
 
 <table>
     <thead>
         <tr>
-            <th colspan =4>ClientAircompany</th>            
+            <th colspan =5>ClientAircompany</th>            
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ScreenShot</td>
-            <td>Название поля</td>
-            <td>Тип даных</td>
-            <td>Описание</td>
+            <td align="center" valign="center">ScreenShot</td>
+            <td align="center" valign="center">Название поля</td>
+            <td align="center" valign="center">Тип данных</td>
+            <td align="center" valign="center">Описание</td>
+            <td align="center" valign="center">Ключ</td>
         </tr>
         <tr>
             <td rowspan=6> <img src="images/clientAircompany.PNG"/> </td>
-            <td>id_aircompany</td>
-            <td>Type</td>
-            <td>Row 0/2</td>
+            <td align="center" valign="center">id_aircompany</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для установления</br> связи между записями в таблицах.</td>            
+            <td align="center" valign="center">Primary Key</br>Foreign Key</td>
         </tr>
         <tr>
-            <td>id_passenger</td>
-            <td>Type</td>
-            <td>Row 1/2</td>
+            <td align="center" valign="center">id_passenger</td>
+            <td align="center" valign="center">int</td>
+            <td align="center" valign="center">Является уникальным идентификатором,</br>который используется для установления</br> связи между записями в таблицах.
+            </td>
+            <td align="center" valign="center">Primary Key</br>Foreign Key</td>
         </tr>        
     </tbody>
 </table>  
