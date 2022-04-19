@@ -12,7 +12,6 @@
 
 ![Screenshot](images/scheme.PNG)
 
-
 # Описание сущностей ER-Модели
 ## Действующий самолет
 <table>
