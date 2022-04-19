@@ -28,7 +28,7 @@
             <td>Описание</td>
         </tr>
         <tr>
-            <td rowspan=5>ScreenShot</td>
+            <td rowspan=5> <img src="images/activeAircraft.PNG"/> </td>
             <td>id_activeAircraft</td>
             <td>Type</td>
             <td>Row 0/2</td>
@@ -67,7 +67,7 @@
             <td>Описание</td>
         </tr>
         <tr>
-            <td rowspan=7>ScreenShot</td>
+            <td rowspan=7><img src="images/informationAircraft.PNG"/> </td>
             <td>id_informationAircraft</td>
             <td>Type</td>
             <td>Row 0/2</td>
@@ -121,7 +121,7 @@
             <td>Описание</td>
         </tr>
         <tr>
-            <td rowspan=5>ScreenShot</td>
+            <td rowspan=5><img src="images/airport.PNG"/> </td>
             <td>id_airport</td>
             <td>Type</td>
             <td>Row 0/2</td>
@@ -165,7 +165,7 @@
             <td>Описание</td>
         </tr>
         <tr>
-            <td rowspan=6>ScreenShot</td>
+            <td rowspan=6><img src="images/runway.PNG"/> </td>
             <td>id_runway</td>
             <td>Type</td>
             <td>Row 0/2</td>
@@ -214,7 +214,7 @@
             <td>Описание</td>
         </tr>
         <tr>
-            <td rowspan=5>ScreenShot</td>
+            <td rowspan=5><img src="images/aircompany.PNG"/> </td>
             <td>id_aircompany</td>
             <td>Type</td>
             <td>Row 0/2</td>
@@ -258,7 +258,7 @@
             <td>Описание</td>
         </tr>
         <tr>
-            <td rowspan=6>ScreenShot</td>
+            <td rowspan=6><img src="images/passenger.PNG"/> </td>
             <td>id_passenger</td>
             <td>Type</td>
             <td>Row 0/2</td>
@@ -288,6 +288,35 @@
             <td>Type</td>
             <td>Row 5/2</td>
         </tr> 
+    </tbody>
+</table>  
+
+## ClientAircompany
+
+<table>
+    <thead>
+        <tr>
+            <th colspan =4>ClientAircompany</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScreenShot</td>
+            <td>Название поля</td>
+            <td>Тип даных</td>
+            <td>Описание</td>
+        </tr>
+        <tr>
+            <td rowspan=6> <img src="images/clientAircompany.PNG"/> </td>
+            <td>id_aircompany</td>
+            <td>Type</td>
+            <td>Row 0/2</td>
+        </tr>
+        <tr>
+            <td>id_passenger</td>
+            <td>Type</td>
+            <td>Row 1/2</td>
+        </tr>        
     </tbody>
 </table>  
 
