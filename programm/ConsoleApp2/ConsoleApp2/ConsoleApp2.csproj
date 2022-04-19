@@ -52,8 +52,6 @@
     <Compile Include="clsInfoAircraft.cs" />
     <Compile Include="clsPassenger.cs" />
     <Compile Include="clsRunway.cs" />
-    <Compile Include="clsSQLConnection.cs" />
-    <Compile Include="clsSQLDataQuery.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
