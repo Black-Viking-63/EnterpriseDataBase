@@ -4,7 +4,8 @@ declare
   @company int = 0,
   @passenger int = 0;
 -- поиск записей по авиакомпании
-while (select count(*) from air_base.dbo.clientAircompany) >= @StartRow  
+while (select count(air_base.dbo.clientAircompany.id_aircompany) from air_base.dbo.clientAircompany
+	where air_base.dbo.clientAircompany.id_aircompany = @company) >= @StartRow  
 begin
     select
 		air_base.dbo.clientAircompany.id_aircompany,
@@ -18,7 +19,8 @@ set @StartRow = @StartRow + @RowsPerPage;
 continue
 end;
 -- найти все компании данного пассажира
-while (select count(*) from air_base.dbo.clientAircompany) >= @StartRow  
+while (select count(air_base.dbo.clientAircompany.id_aircompany) from air_base.dbo.clientAircompany 
+	where air_base.dbo.clientAircompany.id_passenger = @passenger) >= @StartRow  
 begin
     select
 		air_base.dbo.clientAircompany.id_aircompany,
