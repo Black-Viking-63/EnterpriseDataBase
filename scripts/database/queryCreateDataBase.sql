@@ -1,1 +1,1 @@
-create database airBase
+create database air_Base
