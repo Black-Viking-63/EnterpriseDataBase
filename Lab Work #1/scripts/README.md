@@ -1,6 +1,6 @@
 # Структура папок
-[Database](https://github.com/Black-Viking-63/EnterpriseDataBase/tree/main/scripts/database) - содержит скрипты для работы с самой базой данных  
-[Scheme](https://github.com/Black-Viking-63/EnterpriseDataBase/tree/main/scripts/sheme) - содержит скрипты для работы со схемой базой данных (таблицами)
+[Database](https://github.com/Black-Viking-63/EnterpriseDataBase/tree/main/Lab%20Work%20%231/scripts/database) - содержит скрипты для работы с самой базой данных  
+[Scheme](https://github.com/Black-Viking-63/EnterpriseDataBase/tree/main/Lab%20Work%20%231/scripts/sheme) - содержит скрипты для работы со схемой базой данных (таблицами)
 
 # Описание ER-Модели
 В качестве бизнес-модели была выбрана модель авиационных перевозок. Схема модели представлена на фото.    
