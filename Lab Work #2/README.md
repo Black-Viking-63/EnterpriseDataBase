@@ -31,22 +31,31 @@
 ## Этапы 3-5
 Рассмотрим более подробно этапы 3-5, поскольку оснонвая часть работы выполнена на данных этапах.
 ### Этап 3
-На данном этапе мы производим инициализацию и обучение классификатора с параметрами по умолчанию, после чего производим запуск классификатора. Например: 
+На данном этапе мы производим инициализацию и обучение классификатора с параметрами по умолчанию, после чего производим запуск классификатора. Например kNN: 
 ```python
 classifierKNN = KNeighborsClassifier()
 classifierKNN.fit(X_train_scaler, y_train)
 classifierPredictionKNN = classifierKNN.predict(X_test_scaler)
 ```
-### Этап 4
+Важным шагом на данном этапе является проверка точности работы классификатора, собственно по данному параметру мы и будем оценивать работу классификатора.
 ```python
-classifierDTC = DecisionTreeClassifier()
-classifierDTC.fit(X_train_scaler, y_train)
-classifierPredictionDTC = classifierDTC.predict(X_test_scaler)
+accuracy_score(y_test, classifierPredictionKNN)*100
+```
+### Этап 4
+На данном этапе мы производим подбор оптимальных гиперпараметров при помощи GridSearchCV, а так же инициализируем классификатор с оптимальными гиперпараметрами.
+```python
+DecisionTreeParams = {
+    "max_depth": np.linspace(1, 32, 32, endpoint=True),
+    "min_samples_split": np.linspace(0.01, 0.1, 10, endpoint=True),
+    "min_samples_leaf": np.linspace(0.01, 0.1, 10, endpoint=True),
+}
+DecisionTreeGSCV = GridSearchCV(DecisionTreeClassifier(), DecisionTreeParams)
 ```
 ### Этап 5
 
 ```python
-classifierRF = RandomForestClassifier()
-classifierRF.fit(X_train_scaler, y_train)
-classifierPredictionRF = classifierRF.predict(X_test_scaler)
+RandomForestGSCV.fit(X_train_scaler, y_train)
+print(RandomForestGSCV.best_estimator_)
+RandomForestGSCV_Predict = RandomForestGSCV.predict(X_test_scaler)
+accuracy_score(y_test, RandomForestGSCV_Predict) * 100
 ```
