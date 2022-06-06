@@ -31,27 +31,22 @@
 ## Этапы 3-5
 Рассмотрим более подробно этапы 3-5, поскольку оснонвая часть работы выполнена на данных этапах.
 ### Этап 3
-
-
+На данном этапе мы производим инициализацию и обучение классификатора с параметрами по умолчанию, после чего производим запуск классификатора. Например: 
 ```python
 classifierKNN = KNeighborsClassifier()
 classifierKNN.fit(X_train_scaler, y_train)
 classifierPredictionKNN = classifierKNN.predict(X_test_scaler)
 ```
-
+### Этап 4
 ```python
 classifierDTC = DecisionTreeClassifier()
 classifierDTC.fit(X_train_scaler, y_train)
 classifierPredictionDTC = classifierDTC.predict(X_test_scaler)
 ```
+### Этап 5
 
 ```python
 classifierRF = RandomForestClassifier()
-classifierRF.fit(X_train, y_train)
-classifierPredictionRF = classifierRF.predict(X_test)
+classifierRF.fit(X_train_scaler, y_train)
+classifierPredictionRF = classifierRF.predict(X_test_scaler)
 ```
-
-### Этап 4
-
-### Этап 5
-
