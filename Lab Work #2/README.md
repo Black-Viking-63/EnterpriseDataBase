@@ -49,13 +49,26 @@ DecisionTreeParams = {
     "min_samples_split": np.linspace(0.01, 0.1, 10, endpoint=True),
     "min_samples_leaf": np.linspace(0.01, 0.1, 10, endpoint=True),
 }
-DecisionTreeGSCV = GridSearchCV(DecisionTreeClassifier(), DecisionTreeParams)
+DecisionTreeGSCV = GridSearchCV(classifierDTC, DecisionTreeParams)
 ```
 ### Этап 5
-
+На финальном этапе работы с классификаторами, запустим их с учетом подобранных оптимальных гиперпараметров, а так же посмотрим точность предсказания. Например:
 ```python
 RandomForestGSCV.fit(X_train_scaler, y_train)
 print(RandomForestGSCV.best_estimator_)
 RandomForestGSCV_Predict = RandomForestGSCV.predict(X_test_scaler)
 accuracy_score(y_test, RandomForestGSCV_Predict) * 100
 ```
+# Результаты
+Рассмотрим полученные результаты в ходе выполнения лабораторной работы. Для удобства изучения, они были сведены в таблицу.
+| --- | kNN | Decision<br>Tree<br>Classifier | Random<br>Forest<br>Classifier |
+|:---:|:---:|:---:|:---:|
+| <b>Without<br>hyperparameter<br>tuning<b> | 71.75% | 73.23% | 77.69% |
+| <b>With<br>hyperparameter<br>tuning<b> | 75.09% | 72.86% | 76.95% |
+
+
+Нетрудно заметить, что полученные результаты совсем неоднозначны. Самым точным классифиатором является RandomForestClassifier, несмотря на потерю 0.74% точности, произошедшую в процессе настройки гиперпарамтров. Наибольший прирост точности показал классификатор kNN, который повысил точность на 3.34%, после настройки гипер параметров
+   
+
+# Итоги
+Подводя итоги можно абсолютно точно отдать первое место RandomForestClassifier, второе место занимает kNN, на третьем месте DecisionTreeClassifier. Данная оценка носит чисто субъективный характер и зависит только от мнения автора. Так же хочется сказать не много про полученные результаты. Точность предсказаний классифиактора зависит от многих факторов, таких как, процентное соотношение данных при разбиении выборки данных на тестовый и тренировочный пакеты, нормализация данных, подбор гиперпараметров, причем поодбор гиперпараметров не всегде может гарантировать увеличение тосности предсказаний классификатора, чтомы смогли и увидеть на примере DecisionTreeClassifier.
